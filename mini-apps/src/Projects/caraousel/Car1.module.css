@@ -1,0 +1,57 @@
+.mainClass {
+  width: 300px;
+  height: 220px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainClass > div:nth-child(1) {
+  width: 100%;
+  height: 90%;
+}
+
+.mainClass > div:nth-child(2) {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainClass > div:nth-child(2) > div {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonColor1 {
+  background-color: red;
+}
+
+.buttonColor2 {
+  background-color: grey;
+}
+
+.mainClass img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainClass {
+    width: 80vw;
+    height: 60vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .mainClass {
+    width: 100vw;
+    height: 60vw;
+  }
+}
